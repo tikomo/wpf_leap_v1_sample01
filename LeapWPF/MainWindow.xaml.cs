@@ -201,7 +201,7 @@ namespace LeapWPF
             base.Dispatcher.BeginInvoke(System.Windows.Threading.DispatcherPriority.Send, (NoArgDelegate)delegate
             {
                 //data = Sp.ReadExisting();
-                labelLog.Content = rxdata;
+                labeRxData.Content = "Rx = " + rxdata;
             }
             );
             
@@ -301,7 +301,8 @@ namespace LeapWPF
                     // データの送信
                     _port.WriteLine(aText);
                     Debug.WriteLine("Send Tx = " + aText);
-                    this.labelLog.Content = "Send Tx = " + aText;
+                    this.labeTxData.Content = "Tx = " + aText;
+                    this.labelLog.Content = "";
                     //this.toolStripStatusLabel1.Text = "Send Tx = " + aText;
                 }
                 else

@@ -9,8 +9,10 @@
                 </Button>
                 <Button x:Name="buttonTest1" Content="ALL ON" Width="75" Height="26" Click="buttonTest1_Click"/>
                 <Button x:Name="buttonTest2" Content="ALL OFF" Width="75" Height="26" Click="buttonTest2_Click"/>
-                <Label x:Name="labelFingerCount" Content="" Width="106"/>
-                <Label x:Name="labelLog" Content="" Width="322"/>
+                <Label x:Name="labelFingerCount" Content="" Width="80"/>
+                <Label x:Name="labeTxData" Content="" Width="80"/>
+                <Label x:Name="labeRxData" Content="" Width="80"/>
+                <Label x:Name="labelLog" Content="" Width="180"/>
             </StatusBar>
         </InkPresenter>
     </Grid>
